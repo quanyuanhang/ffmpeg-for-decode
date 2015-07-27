@@ -1,0 +1,14 @@
+prefix=/home/qyh/下载/FFmpeg-Android-master/build/ffmpeg/armv6
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 2.1.100
+Requires: 
+Requires.private: libavutil = 51.65.100
+Conflicts:
+Libs: -L${libdir} -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
